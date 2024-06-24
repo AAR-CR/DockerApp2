@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  dockerapp2:
+    image: ${DOCKER_REGISTRY-}dockerapp2
+    build:
+      context: .
+      dockerfile: DockerApp2/Dockerfile
